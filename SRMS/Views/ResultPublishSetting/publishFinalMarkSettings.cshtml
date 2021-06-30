@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "publishFinalMarkSettings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Publish Final-Mark Settings</h2>
+
+<div ng-app="myModuleForFinal" style="">
+    <div ng-controller="myControllerForFinal">
+           {{message}}
+            <select ng-model="search.Batch" ng-options="BatchList for BatchList in BatchList"></select>
+        <!--
+        Match In Semester : <input type="checkbox" ng-checked="" ng-model="Exactmatch" />
+        -->
+        <br />
+
+        <div class="row">
+            <div class="col-md-4" style="border-right:1px solid black">
+                <h3>Submit Mid-Term Mark</h3>
+                <div ng-repeat="data in TableList.MidMark | filter:search.Batch:Exactmatch">
+                    {{data.CourseName}}
+                </div><br />
+            </div>
+            <div class="col-md-4"  style="border-right:1px solid black">
+                <h3>Submit Final-Term Mark</h3>
+                    <div ng-repeat="data in TableList.FinalMark | filter:search.Batch:Exactmatch">
+                        {{data.CourseName}}
+                    </div><br />
+            </div>
+            <div class="col-md-4">
+                <h3>Submit Hand Mark</h3>
+                    <div ng-repeat="data in TableList.HandMark | filter:search.Batch:Exactmatch">
+                        {{data.CourseName}}
+                    </div>
+                <input type="button" value="Publish Final-Term Marks" ng-click="PublishFinalMark(TableList.MidMark | filter:search.Batch:Exactmatch)" />
+            </div>
+         </div>
+
+
+
+    </div>
+</div>

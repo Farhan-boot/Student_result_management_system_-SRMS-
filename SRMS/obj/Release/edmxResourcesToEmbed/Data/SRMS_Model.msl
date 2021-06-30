@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SRMSDbModelStoreContainer" CdmEntityContainer="SRMSDbContext">
+    <EntitySetMapping Name="AssinCourses">
+      <EntityTypeMapping TypeName="SRMSDbModel.AssinCourse">
+        <MappingFragment StoreEntitySet="AssinCourse">
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Spciallity" ColumnName="Spciallity" />
+          <ScalarProperty Name="Degicnetion" ColumnName="Degicnetion" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseTitle" ColumnName="CourseTitle" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attendances">
+      <EntityTypeMapping TypeName="SRMSDbModel.Attendance">
+        <MappingFragment StoreEntitySet="Attendance">
+          <ScalarProperty Name="TypeOfAttendance" ColumnName="TypeOfAttendance" />
+          <ScalarProperty Name="DateOfAttendance" ColumnName="DateOfAttendance" />
+          <ScalarProperty Name="StdAttendance" ColumnName="StdAttendance" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="StdAcId" ColumnName="StdAcId" />
+          <ScalarProperty Name="StdId" ColumnName="StdId" />
+          <ScalarProperty Name="StdName" ColumnName="StdName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cariculams">
+      <EntityTypeMapping TypeName="SRMSDbModel.Cariculam">
+        <MappingFragment StoreEntitySet="Cariculam">
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseTitle" ColumnName="CourseTitle" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Class_Test">
+      <EntityTypeMapping TypeName="SRMSDbModel.Class_Test">
+        <MappingFragment StoreEntitySet="Class_Test">
+          <ScalarProperty Name="StdDBId" ColumnName="StdDBId" />
+          <ScalarProperty Name="StdMobile" ColumnName="StdMobile" />
+          <ScalarProperty Name="StdName" ColumnName="StdName" />
+          <ScalarProperty Name="Roll" ColumnName="Roll" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="ACid" ColumnName="ACid" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CTfive" ColumnName="CTfive" />
+          <ScalarProperty Name="CTFour" ColumnName="CTFour" />
+          <ScalarProperty Name="CTthree" ColumnName="CTthree" />
+          <ScalarProperty Name="CTtwo" ColumnName="CTtwo" />
+          <ScalarProperty Name="CTone" ColumnName="CTone" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="SRMSDbModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presentations">
+      <EntityTypeMapping TypeName="SRMSDbModel.Presentation">
+        <MappingFragment StoreEntitySet="Presentation">
+          <ScalarProperty Name="StdDBId" ColumnName="StdDBId" />
+          <ScalarProperty Name="StdMobile" ColumnName="StdMobile" />
+          <ScalarProperty Name="StdName" ColumnName="StdName" />
+          <ScalarProperty Name="Roll" ColumnName="Roll" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="AcId" ColumnName="AcId" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="PresentationMark" ColumnName="PresentationMark" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff_Teacher">
+      <EntityTypeMapping TypeName="SRMSDbModel.Staff_Teacher">
+        <MappingFragment StoreEntitySet="Staff&amp;Teacher">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+          <ScalarProperty Name="MothersNumber" ColumnName="MothersNumber" />
+          <ScalarProperty Name="FathersNumber" ColumnName="FathersNumber" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Spciallity" ColumnName="Spciallity" />
+          <ScalarProperty Name="Degicnetion" ColumnName="Degicnetion" />
+          <ScalarProperty Name="YearOfTheService" ColumnName="YearOfTheService" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="SRMSDbModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ParmanentAddress" ColumnName="ParmanentAddress" />
+          <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CurrGaredianAddress" ColumnName="CurrGaredianAddress" />
+          <ScalarProperty Name="CurrGaredianMobile" ColumnName="CurrGaredianMobile" />
+          <ScalarProperty Name="CurrGaredian" ColumnName="CurrGaredian" />
+          <ScalarProperty Name="MothersProfession" ColumnName="MothersProfession" />
+          <ScalarProperty Name="FathersProfession" ColumnName="FathersProfession" />
+          <ScalarProperty Name="MothersMobile" ColumnName="MothersMobile" />
+          <ScalarProperty Name="MothersName" ColumnName="MothersName" />
+          <ScalarProperty Name="FathersMobile" ColumnName="FathersMobile" />
+          <ScalarProperty Name="FathersName" ColumnName="FathersName" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="HSCresult" ColumnName="HSCresult" />
+          <ScalarProperty Name="SSCresult" ColumnName="SSCresult" />
+          <ScalarProperty Name="StdMobile" ColumnName="StdMobile" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="Roll" ColumnName="Roll" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

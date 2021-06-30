@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SRMSDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Assignment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ASone" Type="float" />
+    <Property Name="AStwo" Type="float" />
+    <Property Name="ASthree" Type="float" />
+    <Property Name="ASfour" Type="float" />
+    <Property Name="ASfive" Type="float" />
+    <Property Name="ASsix" Type="float" />
+    <Property Name="ASseven" Type="float" />
+    <Property Name="ASeight" Type="float" />
+    <Property Name="ASnine" Type="float" />
+    <Property Name="ASten" Type="float" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ACid" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdDBId" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssinCourse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseTitle" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TeacherName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Degicnetion" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Spciallity" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Attendance">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdAcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TeacherName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdAttendance" Type="int" Nullable="false" />
+    <Property Name="DateOfAttendance" Type="date" Nullable="false" />
+    <Property Name="TypeOfAttendance" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cariculam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="nvarchar" MaxLength="250" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" />
+    <Property Name="CourseTitle" Type="nvarchar" MaxLength="250" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Class_Test">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CTone" Type="float" />
+    <Property Name="CTtwo" Type="float" />
+    <Property Name="CTthree" Type="float" />
+    <Property Name="CTFour" Type="float" />
+    <Property Name="CTfive" Type="float" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ACid" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdDBId" Type="int" />
+  </EntityType>
+  <EntityType Name="FinalTermMarks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinalMark" Type="float" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdDBId" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GenderName" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Handmark">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdAc" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="StdDBId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AttendanceMarks" Type="float" Nullable="false" />
+    <Property Name="OthersMarks" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MidTermMarks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MidMark" Type="float" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdDBId" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NoticeBoard">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeacherName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="NoticeTitle" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="NoticeBody" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Presentation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PresentationMark" Type="float" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StdDBId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Publish_Final_Marks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TotalMark" Type="float" Nullable="false" />
+    <Property Name="Gp" Type="float" Nullable="false" />
+    <Property Name="Lg" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Publish_Mid_Marks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AcId" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CourseCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MidMark" Type="float" />
+  </EntityType>
+  <EntityType Name="Staff&amp;Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="250" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="250" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="YearOfTheService" Type="datetime" />
+    <Property Name="Degicnetion" Type="nvarchar" MaxLength="250" />
+    <Property Name="Spciallity" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Salary" Type="float" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="250" />
+    <Property Name="MotherName" Type="nvarchar" MaxLength="250" />
+    <Property Name="FathersNumber" Type="nvarchar" MaxLength="250" />
+    <Property Name="MothersNumber" Type="nvarchar" MaxLength="250" />
+    <Property Name="PermanentAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Password" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Roll" Type="nvarchar" MaxLength="250" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="250" />
+    <Property Name="Batch" Type="nvarchar" MaxLength="250" />
+    <Property Name="Semester" Type="nvarchar" MaxLength="250" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="250" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="250" />
+    <Property Name="StdMobile" Type="nvarchar" MaxLength="250" />
+    <Property Name="SSCresult" Type="nvarchar" MaxLength="250" />
+    <Property Name="HSCresult" Type="nvarchar" MaxLength="250" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Picture" Type="nvarchar" MaxLength="250" />
+    <Property Name="FathersName" Type="nvarchar" MaxLength="250" />
+    <Property Name="FathersMobile" Type="nvarchar" MaxLength="250" />
+    <Property Name="MothersName" Type="nvarchar" MaxLength="250" />
+    <Property Name="MothersMobile" Type="nvarchar" MaxLength="250" />
+    <Property Name="FathersProfession" Type="nvarchar" MaxLength="250" />
+    <Property Name="MothersProfession" Type="nvarchar" MaxLength="250" />
+    <Property Name="CurrGaredian" Type="nvarchar" MaxLength="250" />
+    <Property Name="CurrGaredianMobile" Type="nvarchar" MaxLength="250" />
+    <Property Name="CurrGaredianAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="Status" Type="nvarchar" MaxLength="250" />
+    <Property Name="PresentAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="ParmanentAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Password" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityContainer Name="SRMSDbModelStoreContainer">
+    <EntitySet Name="Assignment" EntityType="Self.Assignment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AssinCourse" EntityType="Self.AssinCourse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Attendance" EntityType="Self.Attendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cariculam" EntityType="Self.Cariculam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Class_Test" EntityType="Self.Class_Test" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FinalTermMarks" EntityType="Self.FinalTermMarks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Handmark" EntityType="Self.Handmark" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MidTermMarks" EntityType="Self.MidTermMarks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NoticeBoard" EntityType="Self.NoticeBoard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Presentation" EntityType="Self.Presentation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Publish_Final_Marks" EntityType="Self.Publish_Final_Marks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Publish_Mid_Marks" EntityType="Self.Publish_Mid_Marks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff&amp;Teacher" EntityType="Self.Staff&amp;Teacher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,151 @@
+﻿@model IEnumerable<SRMS.Models.AttendanceM>
+
+@{
+    ViewBag.Title = "AllStudent";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+@foreach (var item in Model.Take(1))
+{   <h3 style="text-align:center">
+        @Html.DisplayFor(modelItem => item.CourseName)<br />
+        @Html.DisplayFor(modelItem => item.CourseCode)
+    </h3>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roll)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+        <th>
+          @*@Html.DisplayNameFor(model => model.CourseName)*@ 
+        </th>
+        <th>
+          @*@Html.DisplayNameFor(model => model.CourseCode)*@ 
+        </th>
+        <th>
+          @* @Html.DisplayNameFor(model => model.TeacherName)*@ 
+        </th>
+        <th>
+           @*@Html.DisplayNameFor(model => model.StdAtten)*@ 
+        </th>
+        <th>
+         @*@Html.DisplayNameFor(model => model.Date)*@ 
+        </th>
+        <th>
+           @*@Html.DisplayNameFor(model => model.TypeOfAtten)*@ 
+        </th>
+        <th>
+          @*@Html.DisplayNameFor(model => model.boolAttn)*@ 
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="btn-github" style="font-size:16px">
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+        <td>
+         @* @Html.DisplayFor(modelItem => item.CourseName)*@  
+        </td>
+        <td>
+          @* @Html.DisplayFor(modelItem => item.CourseCode)*@ 
+        </td>
+        <td>
+           @*@Html.DisplayFor(modelItem => item.TeacherName)*@ 
+        </td>
+        <td>
+           @*@Html.DisplayFor(modelItem => item.StdAtten)*@
+        </td>
+        <td>
+          @*@Html.DisplayFor(modelItem => item.Date)*@ 
+        </td>
+        <td>
+           @*@Html.DisplayFor(modelItem => item.TypeOfAtten)*@
+        </td>
+        <td>
+          @*@Html.DisplayFor(modelItem => item.boolAttn)*@ 
+        </td>
+        <td>
+            <!-- Button trigger modal -->
+            <a value="Launch demo modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong" onclick="LoadStd(@item.Id)">Student Marks</a>
+           @* @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+            <a class="btn btn-info" onclick="Delete('@Url.Action("Delete", "ClassTestPresentation",new {item.Id})')">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>
+
+@using (Html.BeginForm("ClasstestStd", "ClassTestPresentation", FormMethod.Post))
+{
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Class Test Number</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <label class="label label-default">1st Class Test</label>  <input class="form-control" type="text" name="classtest1" /><br />
+                <label class="label label-default">2nd Class Test</label>  <input class="form-control" type="text" name="classtest2" /><br />
+                <label class="label label-default">3rd Class Test</label>  <input class="form-control" type="text" name="classtest3" /><br />
+                <label class="label label-default">4th Class Test</label>  <input class="form-control" type="text" name="classtest4" /><br />
+                <label class="label label-default">5th Class Test</label>  <input class="form-control" type="text" name="classtest5" /><br />
+
+                <!--hidden fild-->
+                <input id="modalid" name="StdId" type="hidden">
+                @foreach (var item in Model.Take(1))
+                {   <h3 style="text-align:center">
+                        <input type="hidden" name="CourseName" value="@item.CourseName" /><br />
+                        <input type="hidden" name="CourseCode" value="@item.CourseCode" />
+                </h3>
+                }
+
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button  type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ }

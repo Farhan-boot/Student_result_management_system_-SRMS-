@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/PrintDetails.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    @model SRMS.Data.Student
+
+    @{
+        ViewBag.Title = "PrintDetails";
+        Layout = null;
+    }
+    <h2 style="text-align:center">Student Details</h2>
+    <div class="container bootstrap snippet">
+        <div class="row ng-scope">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="pv-lg">
+                            <img class="center-block img-responsive img-thumbnail thumb96" style="float: left;" src="@Url.Content(Model.Picture)" alt="Contact">             
+                            <div class="mv-lg" style="float: left;padding-left: 10px;">
+                                <span class="m0 text-bold" style="font-size:22px">@Html.DisplayFor(model => model.Name)</span>
+                                <p>Department: @Html.DisplayFor(model => model.Dept)</p>
+                                <p>Status: @Html.DisplayFor(model => model.Status)</p>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Roll: @Html.DisplayFor(model => model.Roll)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle"></div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Account ID: @Html.DisplayFor(model => model.AccountID)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">   
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Batch: @Html.DisplayFor(model => model.Batch)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Semester: @Html.DisplayFor(model => model.Semester)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">User Name: @Html.DisplayFor(model => model.UserName)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Gender: @Html.DisplayFor(model => model.Sex)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle"></div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Student Mobile: @Html.DisplayFor(model => model.StdMobile)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">SSC Result: @Html.DisplayFor(model => model.SSCresult)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">HSC Result: @Html.DisplayFor(model => model.HSCresult)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                            </div>
+                            <div class="media-body pt-sm">
+                                <div class="text-bold">
+                                    <div class="text-sm text-muted">Date Of Birth: @Html.DisplayFor(model => model.DOB)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="pull-right">
+                            <div class="btn-group dropdown" uib-dropdown="dropdown">
+                                <button class="btn btn-link dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><em class="fa fa-ellipsis-v fa-lg text-muted"></em></button>
+                                <ul class="dropdown-menu dropdown-menu-right animated fadeInLeft" role="menu">
+                                    <li><a href=""><span>Send by message</span></a></li>
+                                    <li><a href=""><span>Share contact</span></a></li>
+                                    <li><a href=""><span>Block contact</span></a></li>
+                                    <li><a href=""><span class="text-warning">Delete contact</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="h4 text-center">Other Information</div>
+                        <div class="row pv-lg" style="padding-left:15px">
+                            <div class=""></div>
+                            <div class="col-lg-8" style="float:none">
+                                <form class="form-horizontal ng-pristine ng-valid">
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact1">Student Email ID: @Html.DisplayFor(model => model.Email)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact1">Fathers Name: @Html.DisplayFor(model => model.FathersName)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact2">Mothers Name: @Html.DisplayFor(model => model.MothersName)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact3">Fathers Mobile: @Html.DisplayFor(model => model.FathersMobile)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact4">Mothers Mobile: @Html.DisplayFor(model => model.MothersMobile)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact5">Fathers Profession: @Html.DisplayFor(model => model.FathersProfession)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact6">Mothers Profession: @Html.DisplayFor(model => model.MothersProfession)</label>
+                                       
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact7">Current Garedian: @Html.DisplayFor(model => model.CurrGaredian)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact8">Current Garedian Mobile: @Html.DisplayFor(model => model.CurrGaredianMobile)</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact8">Current Garedian Address:@Html.DisplayFor(model => model.CurrGaredianAddress)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact8">Present Address: @Html.DisplayFor(model => model.PresentAddress)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputContact8">Parmanent Address: @Html.DisplayFor(model => model.ParmanentAddress)</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10" style="margin-left:unset;padding-bottom:12px">
+                        @Html.ActionLink("Back","Details", "Student",new { id = Model.ID }, new { @class= "btn btn-info" })
+                        @Html.ActionLink("Download PDF", "DownloadPDF", "Student", new { id = Model.ID }, new { @class = "btn btn-info" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

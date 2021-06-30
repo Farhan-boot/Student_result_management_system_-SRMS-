@@ -1,0 +1,36 @@
+﻿@model SRMS.Data.NoticeBoard
+
+@{
+    ViewBag.Title = "Notice";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<div ng-app="noticeBoard" class="col-md-8">
+    <div ng-controller="noticeController">
+
+
+        <form name="assinNotice" ng-submit="submitNotice(Notice)">
+            <h4>Select The Option:</h4>
+            <select ng-model="Notice.Option.Subject" ng-options="Option.CourseTitle for Option in noticeBropdown"></select>
+            <select ng-model="Notice.Option.Subject" ng-options="Option.CourseCode for Option in noticeBropdown"></select>
+            <select ng-model="Notice.Option.Class" ng-options="Option.Batch for Option in noticeBropdown"></select>
+            <select ng-model="Notice.Option.Class" ng-options="Option.Semester for Option in noticeBropdown"></select>
+            <select ng-model="Notice.Option.Bilding" ng-options="Option.Dept for Option in noticeBropdown"></select>
+            <!--
+            <select typeof="hidden" ng-model="Option.Subject" ng-options="Option.TeacherName for Option in noticeBropdown"></select>
+            -->
+            <br />
+            <h4>Notice Title:</h4>
+            <input ng-maxlength="150" ng-model="Notice.Option.title" type="text" style="width:100%" />
+            <h4>Notice Body:</h4>
+            <textarea ng-maxlength="246" ng-model="Notice.Option.body" style="width:100%;min-height:300px"></textarea>
+
+            <input type="submit" id="submit" value="Send The Message" />
+        </form>
+    </div>
+
+</div>
+
+
+
+

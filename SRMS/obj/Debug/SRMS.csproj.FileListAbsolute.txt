@@ -1,0 +1,261 @@
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\csc.exe
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\System.Collections.Immutable.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\vbc.exe
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe.config
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.dll.config
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.pdb
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Web.Infrastructure.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Owin.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\WebGrease.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.pdb
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.pdb
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\ApplicationInsights.config
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.dll
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.xml
+c:\users\fs-jesy\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\FS-JESY\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\Rotativa.dll
+C:\Users\FS-JESY\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EPPlus.dll
+C:\Users\FS-JESY\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\EPPlus.xml
+C:\Users\FS-JESY\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\IronPdf.dll
+C:\Users\FS-JESY\documents\visual studio 2015\Projects\SRMSsolu\SRMS\bin\IronPdf.xml
+C:\Users\FS-JESY\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.csprojResolveAssemblyReference.cache
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\ApplicationInsights.config
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\csc.exe
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\System.Collections.Immutable.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\vbc.exe
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe.config
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\SRMS.dll.config
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\SRMS.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\SRMS.pdb
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EntityFramework.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EPPlus.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\IronPdf.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Web.Infrastructure.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Owin.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Rotativa.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\WebGrease.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EPPlus.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\IronPdf.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.pdb
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EntityFramework.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Project Bacup\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.csprojResolveAssemblyReference.cache
+E:\Project Bacup\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.dll
+E:\Project Bacup\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.pdb
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\ApplicationInsights.config
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\csc.exe
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\vbc.exe
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.dll.config
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\SRMS.pdb
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EPPlus.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\IronPdf.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Owin.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Rotativa.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\WebGrease.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EPPlus.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\IronPdf.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.Web.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Helpers.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Mvc.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Optimization.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.Razor.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Antlr3.Runtime.pdb
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Newtonsoft.Json.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\EntityFramework.SqlServer.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.csprojResolveAssemblyReference.cache
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.dll
+C:\Users\Windows 10\Documents\Visual Studio 2015\Projects\SRMSsolu\SRMS\obj\Debug\SRMS.pdb

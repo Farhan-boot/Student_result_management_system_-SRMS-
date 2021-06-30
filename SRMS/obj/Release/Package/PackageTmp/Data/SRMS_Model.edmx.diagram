@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="54ba71c9bf9545fbbcf089f31097f755" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SRMSDbModel.AssinCourse" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Attendance" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Cariculam" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Class_Test" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Gender" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Presentation" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Staff_Teacher" Width="1.5" PointX="6.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SRMSDbModel.Student" Width="1.5" PointX="8.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

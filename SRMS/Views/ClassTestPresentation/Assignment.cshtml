@@ -1,0 +1,132 @@
+﻿@model IEnumerable<SRMS.Models.AttendanceM>
+
+@{
+    ViewBag.Title = "Assignment";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+
+@foreach (var item in Model.Take(1))
+{   <h3 style="text-align:center">
+        @Html.DisplayFor(modelItem => item.CourseName)<br />
+        @Html.DisplayFor(modelItem => item.CourseCode)
+    </h3>
+}
+
+
+<h2>Assignment</h2>
+
+
+<button class="btn-default">
+    @Html.ActionLink("Back", "ClassTest")
+</button>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roll)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+       
+        <td>
+            <a value="Launch demo modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong" onclick="LoadStd(@item.Id)">Assignment Marks</a>
+          @*@Html.ActionLink("Assignment Marks", "AssignmentMarks", new { id=item.Id }) |*@
+           @* @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+
+            <a class="btn btn-info" onclick="Delete('@Url.Action("ASDelete", "ClassTestPresentation",new {item.Id})')">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+
+
+@using (Html.BeginForm("AssignmentStd", "ClassTestPresentation", FormMethod.Post))
+{
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Assignment Number</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <input value="@Session["id"]" name="Pid" type="hidden">
+
+                    <label class="label label-default">1st Class Test</label>  <input class="form-control" type="text" name="assin1" /><br />
+                    <label class="label label-default">2nd Class Test</label>  <input class="form-control" type="text" name="assin2" /><br />
+                    <label class="label label-default">3rd Class Test</label>  <input class="form-control" type="text" name="assin3" /><br />
+                    <label class="label label-default">4th Class Test</label>  <input class="form-control" type="text" name="assin4" /><br />
+                    <label class="label label-default">5th Class Test</label>  <input class="form-control" type="text" name="assin5" /><br />
+
+
+                    <label class="label label-default">6th Class Test</label>  <input class="form-control" type="text" name="assin6" /><br />
+                    <label class="label label-default">7th Class Test</label>  <input class="form-control" type="text" name="assin7" /><br />
+                    <label class="label label-default">8th Class Test</label>  <input class="form-control" type="text" name="assin8" /><br />
+                    <label class="label label-default">9th Class Test</label>  <input class="form-control" type="text" name="assin9" /><br />
+                    <label class="label label-default">10th Class Test</label>  <input class="form-control" type="text" name="assin10" /><br />
+
+
+
+                    <!--hidden fild-->
+                    <input id="modalid" name="StdId" type="hidden">
+                    @foreach (var item in Model.Take(1))
+                {   <h3 style="text-align:center">
+                    <input type="hidden" name="CourseName" value="@item.CourseName" /><br />
+                    <input type="hidden" name="CourseCode" value="@item.CourseCode" />
+                </h3>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+}

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<SRMS.Data.MidTermMark>
+
+@{
+    ViewBag.Title = "MidViewResult";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<h3 style="text-align:center;font-weight:bold">University Of Development Alternative</h3>
+@foreach (var item in Model.Take(1))
+{   <h4 style="text-align:center;margin-top:-6px">
+        <span style="font-size:24px">Department of @Html.DisplayFor(modelItem => item.Dept)</span><br />
+        @Html.DisplayFor(modelItem => item.CourseName)
+        { @Html.DisplayFor(modelItem => item.CourseCode) }<br />
+        Batch :  @Html.DisplayFor(modelItem => item.Batch)
+        Semester : @Html.DisplayFor(modelItem => item.Semester)
+    </h4>
+}
+
+@Styles.Render("~/Content/TableStyle.css")
+
+<h2>Mid Result Sheet</h2>
+
+<p>
+    @Html.ActionLink("Back To Dashbord", "Teacher", "Teacher")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roll)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AcId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StdMobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MidMark)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AcId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdMobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MidMark)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

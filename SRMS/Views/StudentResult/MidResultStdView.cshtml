@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "MidResultStdView";
+    Layout = "~/Views/Shared/_Layout-Student.cshtml";
+}
+
+<div ng-app="myStudentModule">
+    <div ng-controller="myStudentController">
+        <h2 style="text-align:center;font-weight:bold">University Of Development Alternative</h2>
+        <h3 style="text-align:center;font-weight:bold">{{message}}</h3>
+        <h4 style="text-align:center;font-weight:bold">{{Semester}}</h4>
+       
+        <div class="row" style="padding:25px">
+            <div>
+                <h4 style="font-weight:bold">Name : {{ListData.Name}}</h4>
+                <h4 style="font-weight:bold">Roll : {{ListData.Roll}}</h4>
+            </div>
+
+            <form ng-submit="submitSemester(Semester)">
+                <select ng-model="Semester" ng-options="x for x in semesterNames"></select>
+                <input type="submit" id="submit" value="Search By Semester" />
+                <input type="button" value="Print"  ng-click="myPrint()"/>
+            </form>
+            <hr />
+        
+            <div class="container" style="border:1px solid black">  
+                    <div class="row" style="font-size:20px;font-weight:bold">
+                        <div class="col-md-6">Course Name(Code)</div>
+                        <div class="col-md-6">Mid-Term Marks</div>
+                    </div>
+                    <div style="border-top:1px solid black;padding:8px" class="row" ng-repeat="result in ListData.PublishMidMarks">
+                        <div class="col-md-6">{{result.CourseName}}( {{result.CourseCode}} )</div>
+                        <div class="col-md-6">{{result.MidMark}}</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

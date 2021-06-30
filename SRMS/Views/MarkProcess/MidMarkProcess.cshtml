@@ -1,0 +1,131 @@
+﻿@model IEnumerable<SRMS.Data.AssinCourse>
+
+
+@{
+    ViewBag.Title = "MidMarkProcess";
+   // Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+    Layout = null;
+}
+
+<h5>Hand-Marks Process</h5>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Dept)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Dept)
+        </td>
+        <td>
+            <a value="Launch demo modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong" onclick="LoadAssinCourse(@item.Id)">Submit & Save</a>
+            <!--
+            <a class="btn btn-info" onclick="DownloadResult('@Url.Action("DownloadResult", "MarkProcess",new {item.Id})')">Download Result</a>
+            -->
+           @Html.ActionLink("View Result", "ViewResult",new { item.Id }, new { @class = "btn btn-success" })
+            <a class="btn btn-danger" onclick="DeletePubHandMark('@Url.Action("DeletePubHandMark", "MarkProcess",new {item.Id})')">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+
+@using (Html.BeginForm("HandMark", "MarkProcess", FormMethod.Post))
+{
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><b>NOTE :</b> Automatically Presentation Mark Get Out of 5% And Attendance Get Out Of 10% </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   
+                    <input id="jesy"  name="Pid" type="hidden">
+
+                    <label class="label label-default">Class-Test Mark Process Type Out of 5%</label>
+                    <div class="form-group">
+                        <label for="validate-select"></label>
+                        <div class="input-group">
+                            <select class="form-control" name="ClassTest" id="validate-select" placeholder="Validate Select" required="">
+                                <option value="0">Avarage Mark</option>
+                                <option value="1">Best One Count</option>
+                             <!-- <option value="2">Best Three Count</option>-->
+                            </select>
+                            <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                        </div>
+                    </div>
+
+
+                    <label class="label label-default">Assignment Mark Process Type Out of 5%</label>
+                    <div class="form-group">
+                        <label for="validate-select"></label>
+                        <div class="input-group">
+                            <select class="form-control" name="Assignment" id="validate-select" placeholder="Validate Select" required="">
+                                <option value="0">Avarage Mark</option>
+                                <option value="1">Best One Count</option>
+                               <!-- <option value="2">Best Three Count</option>-->
+                            </select>
+                            <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                        </div>
+                    </div>
+
+                    
+
+
+                    <!--hidden fild-->
+                    <input id="modalid" name="StdId" type="hidden">
+                    @foreach (var item in Model.Take(1))
+                    {   <h3 style="text-align:center">
+                            <input type="hidden" name="CourseName" value="@item.CourseTitle" /><br />
+                            <input type="hidden" name="CourseCode" value="@item.CourseCode" />
+                        </h3>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

@@ -1,0 +1,180 @@
+﻿@model IEnumerable<SRMS.Data.AssinCourse>
+
+@{
+    ViewBag.Title = "MidAndFinalMark";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<h2>Mid-Term And Final-Term Mark</h2>
+
+
+    <p style="float:left;margin-left:15px;margin-bottom: 6px" class="btn btn-info">
+        @Html.ActionLink("Back to Dashbord", "Teacher", "Teacher")
+    </p>
+
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+    <!-- Custom Tabs -->
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Mid Term Mark <b style="font-size:large">( 25 )</b></a></li>
+            <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="true">Final Term Mark <b style="font-size:large">( 50 )</b></a></li>
+            <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_1">
+
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseTitle)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseCode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Batch)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Semester)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TeacherName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Degicnetion)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Spciallity)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Dept)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseTitle)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Batch)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Semester)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TeacherName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Degicnetion)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Spciallity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Dept)
+                            </td>
+                            <td>
+                                <a href="@Url.Action("MidAndFinal", "Teacher", new { id=item.Id })">All Student</a>
+
+                                @*
+    @Html.ActionLink("Teacher", "MidAndFinal", new { id = item.Id })
+    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                *@
+                            </td>
+                        </tr>
+                    }
+                    
+                </table>
+
+            </div>
+            <!-- /.tab-pane -->
+            <div class="tab-pane" id="tab_2">
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseTitle)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CourseCode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Batch)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Semester)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TeacherName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Degicnetion)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Spciallity)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Dept)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseTitle)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Batch)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Semester)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TeacherName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Degicnetion)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Spciallity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Dept)
+                            </td>
+                            <td>
+                                <a href="@Url.Action("Final", "Teacher", new { id=item.Id })">All Student</a>
+
+                                @*
+                        @Html.ActionLink("Teacher", "MidAndFinal", new { id = item.Id })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                *@
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+           
+        </div>
+        <!-- /.tab-content -->
+    </div>
+    <!-- nav-tabs-custom -->
+</div>

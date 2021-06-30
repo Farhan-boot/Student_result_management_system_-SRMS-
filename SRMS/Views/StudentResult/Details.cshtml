@@ -1,0 +1,54 @@
+﻿@model SRMS.Data.Student
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout-Student.cshtml";
+}
+
+
+<div>
+    <h4>Your Profile Informetion :-
+        
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+            @Html.ActionLink("Back to Dashboard", "Index")
+    
+    
+    </h4>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <!-- Widget: user widget style 1 -->
+        <div class="box box-widget widget-user-2">
+            <!-- Add the bg color to the header using any of the bg-* classes -->
+            <div class="widget-user-header bg-yellow">
+                <div class="widget-user-image">
+                    <img class="img-circle img-bordered-sm" src="@Url.Content(Model.Picture)" alt="User Avatar" style="height:70px;width:70px">
+                </div>
+                <!-- /.widget-user-image -->
+                <h3 class="widget-user-username">@Html.DisplayFor(model => model.Name)</h3>
+                <h5 class="widget-user-desc">Roll : @Html.DisplayFor(model => model.Roll)</h5>
+            </div>
+            <div class="box-footer no-padding">
+                <ul class="nav nav-stacked">
+                    <li><a href="#">Account Number : @Html.DisplayFor(model => model.AccountID)</a></li>
+                    <li><a href="#">Batch : @Html.DisplayFor(model => model.Batch)</a></li>
+                    <li><a href="#">@Html.DisplayFor(model => model.Semester)</a></li>
+                    <li><a href="#">Department : @Html.DisplayFor(model => model.Dept)</a></li>
+                    <li><a href="#">Gendar : @Html.DisplayFor(model => model.Sex)</a></li>
+                    <li><a href="#">Phone Number : @Html.DisplayFor(model => model.StdMobile)</a></li>
+                    <li><a href="#">SSC Result : @Html.DisplayFor(model => model.SSCresult)</a></li>
+                    <li><a href="#">HSC Result : @Html.DisplayFor(model => model.HSCresult)</a></li>
+                    <li><a href="#">Date Of Birth : @Html.DisplayFor(model => model.DOB)</a></li>
+                    <li><a href="#">Email : @Html.DisplayFor(model => model.Email)</a></li>
+                    <li><a href="#">User Name : @Html.DisplayFor(model => model.UserName)</a></li>
+                    <li><a href="#">Password : @Html.DisplayFor(model => model.Password)</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.widget-user -->
+    </div>
+</div>
+

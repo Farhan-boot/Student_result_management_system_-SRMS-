@@ -1,0 +1,79 @@
+﻿@model SRMS.Models.CourseSettingM
+
+@{
+    ViewBag.Title = "AddEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Assign Course</h2>
+<p>
+    @Html.ActionLink("Back to List", "AssinList", "CourseSetting", new { @class = "btn btn-block btn-info btn-flat" })
+</p>
+
+<p>If You are an Administrator you can Assign the Courses</p>
+
+
+@using (Html.BeginForm("AddEdit", "CourseSetting", FormMethod.Post))
+{
+
+    <table>
+ <tr style="font-size:28px;line-height:60px">
+        <td>Batch</td>
+       <td>@Html.DropDownListFor(model => model.Batch, new SelectList(@ViewBag.filterBatch),new {@class="form-control" })</td>
+</tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Department</td>
+            <td>
+                @Html.DropDownListFor(model => model.Dept, new SelectList(@ViewBag.filterDept), new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Semester</td>
+            <td>
+                @Html.DropDownListFor(model => model.Semester, new SelectList(@ViewBag.filterSemester), new { @class = "form-control" })
+            </td>
+       </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Course Code</td>
+            <td>
+                @Html.DropDownListFor(model => model.CourseCode, new SelectList(@ViewBag.filterCourseCode), new { @class = "form-control" })
+            </td>
+          </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Course Title</td>
+            <td>
+                @Html.DropDownListFor(model => model.CourseTitle, new SelectList(@ViewBag.filterCourseTitle), new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Teacher Name</td>
+            <td>
+                @Html.DropDownListFor(model => model.TeacherName, new SelectList(@ViewBag.filterName), new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Degicnetion</td>
+            <td>
+                @Html.DropDownListFor(model => model.Degicnetion, new SelectList(@ViewBag.filterType), new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr style="font-size:28px;line-height:60px">
+            <td>Spciallity</td>
+            <td>
+                @Html.DropDownListFor(model => model.Spciallity, new SelectList(@ViewBag.filterSpciallity), new { @class = "form-control" })
+            </td>
+        </tr>
+</table>
+
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="submit" value="Assign Course" class="btn btn-block btn-info btn-flat" />
+        </div>
+    </div>
+
+
+
+
+}
+

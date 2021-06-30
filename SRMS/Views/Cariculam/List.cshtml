@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SRMS.Data.Cariculam>
+
+@{
+    ViewBag.Title = "Cariculam List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Cariculam List</h2>
+
+<div style="width:100%;padding-bottom:40px">
+    @using (Html.BeginForm("List", "Cariculam", FormMethod.Get))
+    {
+        <input type="submit" value="Search" class="btn btn-success" style="float: right" />
+        <input type="text" name="searchByYearSemester" style="width:150px;float:right;padding-top:9px" placeholder="Search Year / Semester"/>
+    }
+</div>
+
+<p>
+    @Html.ActionLink("Create New Subjest in Cariculam", "AddEdit", "Cariculam", new { @class = "btn btn-block btn-info btn-flat" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseCode)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="btn-default" style="font-size:16px">
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseCode)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "AddEdit", new { id=item.Id },new {@class= "btn btn-info"})
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id },new {@class= "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "ResultList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ResultList</h2>
+
+<div ng-app="myModule">
+    <div ng-controller="myController">
+
+       @*{{message}}*@
+        <!--
+        Search By Semester: <input type="search" ng-model="search.Semester"/>
+        -->
+        Search By Semester: <select ng-model="search.Semester" ng-options="SemesterList for SemesterList in SemesterList"></select>
+        <!--
+        Match In Semester : <input type="checkbox" ng-checked="" ng-model="Exactmatch" />
+        -->
+        <div class="row">
+            <div ng-repeat="List in ListData" class="col-md-4" style="border-right:1px solid black">
+                <h3>Cariculam List</h3>
+                <div ng-repeat="item in List.CariculamList | filter:search:Exactmatch" style="font-size:22px">
+                    {{item.CourseTitle}}
+                    {{item.CourseCode}}
+                   <input type="hidden" value="{{item.Semester}}"/>
+                </div>
+            </div>
+
+            <div ng-repeat="List in ListData" class="col-md-4" style="border-right:1px solid black">
+                <h3>Assinge Course List</h3>
+                <div ng-repeat="item in List.AssinCourseList | filter:search" style="font-size:22px">
+                    {{item.CourseTitle}}
+                    {{item.CourseCode}}
+                    <input type="hidden" value="{{item.Semester}}" />
+                </div>
+
+            </div>
+
+            
+            <div ng-repeat="List in ListData" class="col-md-4" style="">
+                <h3>Submit Mid-Term Mark List</h3>
+                <div ng-repeat="item in List.MidTermMarkList | filter:search" style="font-size:22px">
+                    {{item.CourseName}}
+                    {{item.CourseCode}}
+                    <input type="hidden" value="{{item.Semester}}" />
+                </div>
+                <input type="button" value="Publish Mid-Term Marks" ng-click="PublishMidMark(List.MidTermMarkList | filter:search)" />
+            </div>
+        </div>
+
+
+</div>
+</div>
+

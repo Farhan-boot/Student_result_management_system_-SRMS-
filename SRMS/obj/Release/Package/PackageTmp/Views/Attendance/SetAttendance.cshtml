@@ -1,0 +1,89 @@
+﻿@model IEnumerable<SRMS.Models.AttendanceM>
+
+@{
+    ViewBag.Title = "SetAttendance";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<h3>Student Attendance Date : @DateTime.Now.ToShortDateString()</h3>
+
+<p>
+    @Html.ActionLink("Back to Dashboard", "Teacher", "Teacher")
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>
+           Student Name
+        </th>
+        <th>
+            Student Roll
+        </th>
+        <th>
+            Student Account ID
+        </th>
+        <th>
+            Student Batch
+        </th>
+        <th>
+            Student Semester
+        </th>
+        <th>
+            Attendance Type
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr class="btn-default">
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+        <td>
+            <div class="col-md-10">
+                @Html.DropDownListFor(modelItem => item.TypeOfAtten, new List<SelectListItem>
+                    {
+                   new SelectListItem{Text="Regular", Value="Regular"},
+                   new SelectListItem{Text="Late Attendance", Value="Late attendance" }
+                    })
+            </div>
+          @*@Html.DisplayFor(modelItem => item.TypeOfAtten)*@  
+        </td>
+       
+        <td>
+          <a name="vehicle" value="Bike" onclick="AjaxAtten('@Url.Action("AttenProcess", "Attendance",new {id = item.Id})')">
+
+                <input type="button" value="Click" onclick="return change(this);" />
+
+            </a>
+
+</td>
+    </tr>
+}
+</table>
+
+<script type="text/javascript">
+function change( el )
+{
+    if (el.value === "Appsent")
+        el.value = "Present";
+    else
+        el.value = "Present";
+}
+</script>
+

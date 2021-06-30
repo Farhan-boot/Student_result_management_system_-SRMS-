@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "FinalTermView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/TableStyleFinal.css" rel="stylesheet" />
+
+<div ng-app="myModuleForFinal" style="">
+    <div ng-controller="myControllerForFinal">
+
+        <h3 style="text-align:center;font-weight:bold;font-size:30px;margin:0">University Of Development Alternative</h3>
+        <div style="text-align:center;font-weight:bold">
+            <span ng-repeat="dept in FinalListData.Depetment" style="font-size:26px">
+                Department of {{dept}}
+            </span> <br />
+
+            Batch:
+            <span ng-repeat="batch in FinalListData.Batch">
+                {{batch}}
+            </span>,
+            <span ng-repeat="semester in FinalListData.Semester">
+                {{semester}}
+            </span>
+        </div>
+        <br />
+        <div class="hidden-print">
+            @using (Html.BeginForm("FinalSearchBy", "ResultPublishSetting", FormMethod.Post))
+            {
+                @Html.DropDownList("SearchByBatch", new SelectList(ViewBag.FinalBatchListForddl), new { htmlAttributes = new { @class = "form-control" } })
+                // @Html.TextBox("SearchByBatch")
+                <input type="submit" value="Search By Batch" />
+            }
+        </div>
+        <div class="row">
+            <h3 style="padding-left: 15px;">
+                Final-Term Result Sheet
+                <input class="hidden-print" onclick="window.print()" type="button" value="Print & Save to PDF" style="font-size:18px" />
+            </h3>
+        </div>
+
+        <table class="table" style="border: 1px solid black">
+            <thead style="text-align:center;font-weight:bold">
+                <tr>
+                    <td>
+                        <h4 style="font-weight:bold;padding-top: 10px">Student Name</h4>
+                    </td>
+                    <td>
+                        <h4 style="font-weight:bold;padding-top: 10px">Roll</h4>
+                    </td>
+
+                    <td ng-repeat="data in FinalListData.CourseList" style="overflow:hidden">
+                        {{data}}
+
+                        <div class="row" style="border-top:1px solid black;margin-right:0">
+                            <div style="border-right:1px solid black" class="col-md-4">
+                               Total
+                            </div>
+                            <div style="border-right:1px solid black" class="col-md-4">
+                               GPA
+                            </div>
+                            <div style="" class="col-md-4">
+                                Grade
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="data in FinalListData.StudentResultList |filter:{Batch:SearchByBatch}">
+                    <td>
+                        {{data.StudentName}}
+                        <input type="hidden" value="{{data.Batch}}" />
+                    </td>
+                    <td>
+                        {{data.Roll}}
+                    </td>
+
+            <td style="text-align:center" ng-repeat="courseMark in data.CourseMarkList">
+
+                <div class="row" style="margin-right:0">
+                    <div style="border-right:1px solid black" class="col-md-4">
+                        {{courseMark.TotalMark}}
+                    </div>
+                    <div style="border-right:1px solid black" class="col-md-4">
+                        {{courseMark.Gp}}
+                    </div>
+                    <div style="" class="col-md-4">
+                        {{courseMark.Lg}}
+                    </div>
+                </div>
+
+            </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--
+            <br />
+            <div class="row">
+
+                <div ng-repeat="data in MidListData.CourseList">
+                    {{data}}
+                </div>
+                <ul>
+                    <li ng-repeat="data in MidListData.StudentResultList">
+                        {{data.StudentName}}
+                        {{data.Batch}}
+                        <ul>
+                            <li ng-repeat="courseMark in data.CourseMarkList">
+                                {{courseMark.CourseCode}}:  {{courseMark.Mark}}
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br />
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SRMS.Data.NoticeBoard>
+
+@{
+    ViewBag.Title = "ViewAllBatchNotice";
+    Layout = "~/Views/Shared/_Layout-Student.cshtml";
+}
+
+<h2 style="text-align:center">View All Batch Notice</h2>
+
+ <p>
+    @Html.ActionLink("Back to Home", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dept)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dept)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.ID },new {@class="btn btn-success" })   
+        </td>
+    </tr>
+}
+
+</table>

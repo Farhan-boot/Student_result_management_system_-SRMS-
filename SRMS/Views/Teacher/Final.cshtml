@@ -1,0 +1,116 @@
+﻿@model IEnumerable<SRMS.Models.AttendanceM>
+
+@{
+    ViewBag.Title = "Final";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+
+@foreach (var item in Model.Take(1))
+{   <h3 style="text-align:center">
+        @Html.DisplayFor(modelItem => item.CourseName)<br />
+        @Html.DisplayFor(modelItem => item.CourseCode)
+    </h3>
+}
+
+<h2>Final-Term Marks</h2>
+<button class="btn-default">
+    @Html.ActionLink("Back", "MidAndFinalMark")
+</button>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roll)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+       
+        <td>
+           
+            <a value="Launch demo modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong" onclick="LoadStd(@item.Id)">Final-Term Marks</a>
+            <a class="btn btn-info" onclick="DeletePt('@Url.Action("DeleteFtm", "Teacher",new {item.Id})')">Delete Marks</a>
+
+            @*
+    @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            *@
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+
+@using (Html.BeginForm("FinalTerm", "Teacher", FormMethod.Post))
+{
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Final-Term Number</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <input value="@Session["id"]" name="Pid" type="hidden">
+
+                    <label class="label label-default">Final-Term Marks</label><input id="FinalMark" class="form-control" type="text" name="FinalMark" /><br />
+                    <!--hidden fild-->
+                    <input id="modalid" name="StdId" type="hidden">
+                    @foreach (var item in Model.Take(1))
+                    {   <h3 style="text-align:center">
+                        <input type="hidden" name="CourseName" value="@item.CourseName" /><br />
+                        <input type="hidden" name="CourseCode" value="@item.CourseCode" />
+                    </h3>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="FinalBtn" type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+

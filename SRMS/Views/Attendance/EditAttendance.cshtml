@@ -1,0 +1,90 @@
+﻿@model IEnumerable<SRMS.Data.Attendance>
+
+@{
+    ViewBag.Title = "EditAttendance";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+
+
+
+<h2>Edit Student Attendance</h2>
+<p>
+    @Html.ActionLink("Back to Course List", "Atten", "Attendance")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Student Name
+          @*@Html.DisplayNameFor(model => model.StdName)*@ 
+        </th>
+        <th>
+            Student ID
+          @*@Html.DisplayNameFor(model => model.StdId)*@ 
+        </th>
+        <th>
+            Student Account ID
+           @*@Html.DisplayNameFor(model => model.StdAcId)*@ 
+        </th>
+        <th>
+            Batch
+          @*@Html.DisplayNameFor(model => model.Batch)*@ 
+        </th>
+        <th>
+            Semester
+           @*@Html.DisplayNameFor(model => model.Semester)*@ 
+        </th>
+       
+        <th>
+            Course Code
+           @*@Html.DisplayNameFor(model => model.CourseCode)*@ 
+        </th>
+     
+        <th>
+            Attendance Date
+          @*@Html.DisplayNameFor(model => model.DateOfAttendance)*@ 
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="btn-default">
+        <td>
+            @Html.DisplayFor(modelItem => item.StdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdAcId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseCode)
+        </td>
+
+        <td>
+            @{ 
+                DateTime date = Convert.ToDateTime(item.DateOfAttendance).Date;
+            }
+            @date.ToShortDateString()
+                    @*
+              @Html.DisplayFor(modelItem => item.DateOfAttendance)
+                    *@
+        </td>
+        
+        <td>
+           
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id },new {@class= "btn btn-block btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SRMS.Data.AssinCourse>
+
+@{
+    ViewBag.Title = "Atten";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<h2>Atten</h2>
+
+<p>
+    @Html.ActionLink("Back to Dashboard", "Teacher", "Teacher")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Dept)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="btn-default" style="font-size:16px">
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.Dept)
+        </td>
+        <td>
+            @Html.ActionLink("Take Attendance", "SetAttendance", "Attendance", new { id=item.Id }, new { @class = "btn btn-info" })
+            @Html.ActionLink("Edit Attendance", "EditAttendance", new { id = item.Id }, new { @class = "btn btn-info" })
+           @*@Html.ActionLink("View", "View", new { id=item.Id }, new { @class = "btn btn-info" })*@ 
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "AddEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;font-weight:bold">Assign Course</h2>
+<p style="text-align:center;">If you are Administrator you can Assign Course  to The Teacher</p>
+<div class="row">
+    <div class="content">
+        <div ng-app="myModuleForAssinCourse">
+            <div ng-controller="myControllerForAssinCourse">
+                <form name="assinForm" ng-submit="submitAssinForm(AssinCourse)">
+
+                    <div class="col-md-7">
+                        <table>
+                            <!--For Student-->
+                            <tr style="font-size:18px;line-height:50px;">
+                                <td style="width:130px">Batch:</td>
+                                <td><select ng-model="AssinCourse.Option.Batch" ng-options="Option.Batch for Option in ListOfAssinCourseList.Student"></select></td>
+                            </tr>
+                            <tr style="font-size:18px;line-height:50px">
+                                <td style="width:130px">Department:</td>
+                                <td><select ng-model="AssinCourse.Option.Dept" ng-options="DeptOption.Dept for DeptOption in ListOfAssinCourseList.Student"></select></td>
+                            </tr>
+                            <tr style="font-size:18px;line-height:50px">
+                                <td style="width:130px">Semester:</td>
+                                <td><select  ng-model="AssinCourse.Option.Batch" ng-options="Option.Semester for Option in ListOfAssinCourseList.Student"></select></td>
+                            </tr>
+                            <!--For Course-->
+                            <tr style="font-size:18px;line-height:50px">
+                                <td style="width:130px">Course Code:</td>
+                                <td><select ng-model="AssinCourse.Option.CourseCode" ng-options="Option.CourseCode for Option in ListOfAssinCourseList.Cariculam"></select></td>
+                            </tr>
+                            <tr style="font-size:18px;line-height:50px">
+                                <td style="width:130px">Course Name:</td>
+                                <td><select style="width: 100%;" ng-model="AssinCourse.Option.CourseCode" ng-options="Option.CourseTitle for Option in ListOfAssinCourseList.Cariculam"></select></td>
+                            </tr>
+                            <!--For Teacher-->
+                        </table>
+                    </div>
+
+                    <div class="col-md-1" style="text-align:center;color:green"><h3>To</h3> </div>
+
+            <div class="col-md-4">
+                <!-- Widget: user widget style 1 -->
+                <div class="box box-widget widget-user">
+                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                    <div class="widget-user-header bg-aqua-active">
+                        <h3 class="widget-user-username">Faculty Member</h3>
+                    </div>
+                    <div class="widget-user-image" ng-repeat="image in AssinCourse.Option">
+                        <img style="max-height:90px;max-width:90px" class="img-circle" src="{{(image.ImagePath)}}">
+                    </div>
+                    <div class="box-footer">
+                        <div class="row">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">Teacher Name</h5>
+                                    <span class="description-text">
+                                        <select class="form-control" ng-model="AssinCourse.Option.Name" ng-options="Option.Name for Option in ListOfAssinCourseList.Teacher"></select>
+                                    </span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">Degicnetion</h5>
+                                    <span class="description-text">
+                                        <select class="form-control" ng-model="AssinCourse.Option.Name" ng-options="Option.Type for Option in ListOfAssinCourseList.Teacher"></select>
+                                    </span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-sm-4">
+                                <div class="description-block">
+                                    <h5 class="description-header">Spciallity</h5>
+                                    <span class="description-text">
+                                        <select class="form-control" ng-model="AssinCourse.Option.Name" ng-options="Option.Spciallity for Option in ListOfAssinCourseList.Teacher"></select>
+                                    </span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                </div>
+                <!-- /.widget-user -->
+                <button type="submit" class="btn btn-primary">Submit Assin Course</button>
+            </div>
+
+
+            </form>
+
+
+<span ng-repeat="sem in AssinCourse.Option">
+        {{sem.Semester}}
+</span>
+
+
+
+               
+
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+

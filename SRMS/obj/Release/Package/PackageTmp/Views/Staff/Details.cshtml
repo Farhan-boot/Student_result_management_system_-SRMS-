@@ -1,0 +1,219 @@
+﻿@model SRMS.Data.Staff_Teacher
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+@*Desigine start*@
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="box box-primary">
+                <div class="box-body box-profile">
+                    <img class="profile-user-img img-responsive img-circle" src="@Url.Content(Model.ImagePath)" alt="User profile picture">
+                   
+
+                    
+
+                    <h3 class="profile-username text-center">
+                        @Html.DisplayFor(model => model.Name)
+                        </h3>
+
+                        <p class="text-muted text-center">
+                           @* Roll : @Html.DisplayFor(model => model.Roll)*@
+                        </p>
+
+                        <ul class="list-group list-group-unbordered">
+                            <li class="list-group-item">
+                                <b>Spciallity :</b> <a class="pull-right">
+                                  @Html.DisplayFor(model => model.Spciallity)
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <b>Salary :</b> <a class="pull-right">
+                                @Html.DisplayFor(model => model.Salary)
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <b>Type</b> <a class="pull-right">
+                                   @Html.DisplayFor(model => model.Type)
+                                </a>
+                            </li>
+                        </ul>
+
+                        <span class="btn btn-primary btn-block"><b>Department of :@* @Html.DisplayFor(model => model.Dept)*@</b></span>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+                <!-- About Me Box -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Address</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <strong><i class="fa fa-book margin-r-5"></i>Present Address</strong>
+
+                        <p class="text-muted">
+                            @Html.DisplayFor(model => model.Address)
+                        </p>
+
+                        <hr>
+
+                        <strong><i class="fa fa-map-marker margin-r-5"></i>Parmanent Address</strong>
+
+                        <p class="text-muted">@Html.DisplayFor(model => model.PermanentAddress)</p>
+
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-9">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
+                        <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+                        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="activity">
+                            <!-- Post -->
+                            <div class="post">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="@Url.Content(Model.ImagePath)" alt="user image">
+                                    <span class="username">
+                                       
+                                        <span>Email : @Html.DisplayFor(model => model.Email)</span>
+                                    </span>
+                                    <span class="description">Date Of Birth :@Html.DisplayFor(model => model.DOB)</span>
+                                </div>
+                                <!-- /.user-block -->
+                                <p>
+                                    <ul>
+                                        <li>Gender : @Html.DisplayFor(model => model.Sex)</li>
+                                        <li>Student Mobile : @Html.DisplayFor(model => model.Mobile)</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+                            <!-- /.post -->
+                            <!-- Post -->
+                            <div class="post">
+                                <div class="user-block">
+                                    <ul>
+                                        <li>Year Of The Service :@Html.DisplayFor(model => model.YearOfTheService)</li>
+                                        <li>Degicnetion : @Html.DisplayFor(model => model.Degicnetion)</li>
+                                    </ul>
+                                </div>
+                                <!-- /.user-block -->
+                                <div class="row margin-bottom">
+                                    <div class="col-sm-6">
+
+                                    </div>
+                                    <!-- /.col -->
+                                    <div class="col-sm-6">
+                                        <div class="row">
+
+
+                                        </div>
+                                        <!-- /.row -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.post -->
+                        </div>
+                        <!-- /.tab-pane -->
+                        <div class="tab-pane" id="timeline">
+                            <!-- The timeline -->
+                            <ul class="timeline timeline-inverse">
+                                <li>User Name : @Html.DisplayFor(model => model.UserName)</li>
+                                <li>Password : @Html.DisplayFor(model => model.Password)</li>
+                                <li>Status :@* @Html.DisplayFor(model => model.Status)*@</li>
+                            </ul>
+                        </div>
+                        <!-- /.tab-pane -->
+
+                        <div class="tab-pane" id="settings">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-3">Fathers Name :</label>
+                                    <div class="col-sm-9">
+                                        @Html.DisplayFor(model => model.FatherName)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Fathers Mobile :</label>
+                                    <div class="col-sm-9">
+                                        @Html.DisplayFor(model => model.FathersNumber)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Mothers Name :</label>
+                                    <div class="col-sm-9">
+                                        @Html.DisplayFor(model => model.MotherName)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Mothers Mobile :</label>
+                                    <div class="col-sm-9">
+                                        @Html.DisplayFor(model => model.MothersNumber)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Fathers Profession :</label>
+                                    <div class="col-sm-9">
+                                       @* @Html.DisplayFor(model => model.FathersProfession)*@
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Mothers Profession :</label>
+                                    <div class="col-sm-9">
+                                       @*@Html.DisplayFor(model => model.MothersProfession)*@ 
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Current Garedian Name :</label>
+                                    <div class="col-sm-9">
+                                      @*  @Html.DisplayFor(model => model.CurrGaredian)*@
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Current Garedian Mobile :</label>
+                                    <div class="col-sm-9">
+                                       @* @Html.DisplayFor(model => model.CurrGaredianMobile)*@
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Current Garedian Address :</label>
+                                    <div class="col-sm-9">
+                                       @* @Html.DisplayFor(model => model.CurrGaredianAddress)*@
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.tab-pane -->
+                    </div>
+                    <!-- /.tab-content -->
+                </div>
+                <p>
+                    @Html.ActionLink("Edit", "AddStaff", "Staff", new { id = Model.Id }, new { @class = "btn btn-info" })
+                    @Html.ActionLink("Back to List", "StaffList", "Staff", new { @class = "btn btn-info" })
+                </p>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+    </section>

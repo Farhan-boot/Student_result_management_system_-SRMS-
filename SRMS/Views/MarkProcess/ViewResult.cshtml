@@ -1,0 +1,113 @@
+﻿@model IEnumerable<SRMS.Data.Handmark>
+
+@{
+    ViewBag.Title = "ViewResult";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+
+<h3 style="text-align:center;font-weight:bold">University Of Development Alternative</h3>
+@foreach (var item in Model.Take(1))
+{   <h4 style="text-align:center;margin-top:-6px">
+        <span style="font-size:24px">Department of @Html.DisplayFor(modelItem => item.Dept)</span><br />
+        @Html.DisplayFor(modelItem => item.CourseName)
+        { @Html.DisplayFor(modelItem => item.CourseCode) }<br />
+        Batch :  @Html.DisplayFor(modelItem => item.Batch)
+        Semester : @Html.DisplayFor(modelItem => item.Semester)
+    </h4>
+}
+
+@Styles.Render("~/Content/TableStyle.css")
+<h3>Class Performance Result Sheet</h3>
+@foreach (var item in Model.Take(1))
+{   <h5>
+        Publish Date : @Html.DisplayFor(modelItem => item.Date)
+
+    </h5>
+}
+
+<p>
+    <input type="button" onclick="window.print()" value="PDF Download & Print"/>
+    @Html.ActionLink("Back To Dashbord", "Teacher", "Teacher") |
+    @Html.ActionLink("PDF Download", "DownloadPDF", "MarkProcess", new { id = @Session["ViewResultId"] }, null) |
+    @Html.ActionLink("Excel Download", "Teacher", "Teacher")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.StdName)*@
+            Student Name
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.StdId)*@
+            Roll Number
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.StdAc)*@
+            Account Number
+        </th>
+
+        @*
+            <th>
+                @Html.DisplayNameFor(model => model.StdDBId)
+            </th>
+        *@
+
+        @* <th>
+            @Html.DisplayNameFor(model => model.Dept)
+                    Department
+                </th>
+        *@
+        <th>
+            @* @Html.DisplayNameFor(model => model.AttendanceMarks)*@
+            Attendance Marks
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.OthersMarks)*@
+            Class Performance Marks
+        </th>
+        @* <th></th>*@
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdAc)
+            </td>
+
+            @*
+                <td>
+                    @Html.DisplayFor(modelItem => item.StdDBId)
+                </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Dept)
+                    </td>
+            *@
+            <td>
+                @Html.DisplayFor(modelItem => item.AttendanceMarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OthersMarks)
+            </td>
+            @*
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                </td>
+            *@
+        </tr>
+    }
+
+</table>

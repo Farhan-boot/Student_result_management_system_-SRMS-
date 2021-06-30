@@ -1,0 +1,30 @@
+﻿@*@model SRMS.Models.StudentM
+
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Test</h2>
+
+<table>
+    <tr>
+        ID: @Model.Id
+    </tr>
+    <tr>
+       Name: @Model.Name
+    </tr>
+    <tr>
+        Roll: @Model.Roll
+    </tr>
+    <tr>
+        Roll: @Model.Dept
+    </tr>
+</table>
+
+<ul>
+    @foreach(var c in Model.Color)
+    {
+       <li>@c</li>
+    }
+</ul>*@

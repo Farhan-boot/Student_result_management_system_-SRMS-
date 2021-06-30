@@ -1,0 +1,93 @@
+﻿@model SRMS.Data.NoticeBoard
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout-Student.cshtml";
+}
+
+<h2 style="text-align:center">Notice Details</h2>
+
+<div>
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Batch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Batch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoticeTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoticeTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoticeBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoticeBody)
+        </dd>
+
+
+
+
+    </dl>
+</div>
+

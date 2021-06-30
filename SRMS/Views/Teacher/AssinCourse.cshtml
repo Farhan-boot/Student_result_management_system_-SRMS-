@@ -1,0 +1,88 @@
+﻿
+@model IEnumerable<SRMS.Data.AssinCourse>
+
+@{
+    ViewBag.Title = "AssinList";
+    Layout = "~/Views/Shared/_Layout-Teacher.cshtml";
+}
+
+<h2>Your Course's !</h2>
+
+<p>
+    @Html.ActionLink("Back to Dashboard", "Teacher", "Teacher")
+</p>
+<table class="table">
+    <tr>
+        <!--
+        <th>
+            Teacher Name
+            @*@Html.DisplayNameFor(model => model.TeacherName)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Degicnetion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Spciallity)
+        </th>
+     -->
+
+
+        <th>
+            Course Title
+            @*@Html.DisplayNameFor(model => model.CourseTitle)*@
+        </th>
+        <th>
+            Course Code
+            @*@Html.DisplayNameFor(model => model.CourseCode)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Dept)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="btn-default" style="font-size:16px">
+
+            <!--
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Degicnetion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Spciallity)
+            </td>
+            -->
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Batch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Dept)
+            </td>
+            <td>
+                @Html.ActionLink("View Students", "Students", new { id = item.Id }, new { @class = "btn btn-info" })
+            </td>
+        </tr>
+    }
+
+</table>
